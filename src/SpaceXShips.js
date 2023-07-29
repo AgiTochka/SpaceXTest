@@ -10,7 +10,7 @@ export const SpaceXShips = ({shipsID}) =>{
         ) : isLoading ? (
             <>Loading...</>
         ) : ships ? (
-                <img src={ships.image} alt={ships.name}/>
+                <img src={ships.flickr_images[0]} alt={ships.name} width={350}/>
         ) : null}
         </>
     );

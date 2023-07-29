@@ -28,6 +28,7 @@ export const SpaceXLaunches = ({sortArg,}) => {
                                 {launch.details}
                             </p>
                             <img src={launch.links.flickr.original[0]} alt={''} width={250}/>
+                            {launch.ships[0] ? <SpaceXShips shipsID={launch.rocket}/> : '' }
                         </li>
                     ))}
                 </ul>

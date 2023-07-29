@@ -24,13 +24,13 @@ export const spaceXApi = createApi({
                     }
                 }
             }),
-            getShipsById: build.query({
-                query: (id) => ({
-                    url: `/v4/ships/${id}`,
-                    method: "GET"
-                })
-            })
         }),
+        getShipsById: build.query({
+            query: (id) => ({
+                url: `v4/rockets/${id}`,
+                method: "GET"
+            })
+        })
     }),
 })
 
